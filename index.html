@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kids Brain Booster Pro</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<!-- SPLASH -->
+<div id="splash" class="screen">
+  <h1>🐾 Kids Brain Booster</h1>
+  <p>Loading Fun Game...</p>
+</div>
+
+<!-- HOME -->
+<div id="home" class="screen hidden">
+  <h1>🎮 Brain Booster PRO</h1>
+  <button onclick="startGame()">PLAY</button>
+  <button onclick="openShop()">🛒 SHOP</button>
+</div>
+
+<!-- GAME -->
+<div id="game" class="screen hidden"></div>
+
+<!-- SHOP -->
+<div id="shop" class="screen hidden">
+  <h2>🛒 Shop Coming Soon</h2>
+  <button onclick="backHome()">⬅ Back</button>
+</div>
+
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
