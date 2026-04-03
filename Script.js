@@ -136,21 +136,22 @@ function render(){
 
 /* CHECK */
 function check(i){
-  let q=game[index];
+  let q = game[index];
 
-  if(i===q.ans){
-    coins+=10;
-    play(correct);
-    play(cheer);
-    confetti();
-    speak(q.fact);
-    setTimeout(next,1500);
-  }else{
-    play(wrong);
-    alert("❌ Try again!");
+  if(i === q.answer){
+    
+    playSound("correct");
+
+    setTimeout(() => {
+      nextQuestion();
+    }, 1000);
+
+  } else {
+
+    playSound("wrong");
+
   }
 }
-
 /* NEXT */
 function next(){
   index++;
